@@ -66,3 +66,61 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+# Hahow Frontend Engineer 徵才小專案文件說明
+
+## 我們該如何執行完成的 package?
+
+第一步: 使用  command-line下指令 `git clone "我的專案"`
+第二步: 使用  command-line下指令 `npm install` 
+第三步: 使用  command-line j專案目錄下指令 `npm start` 
+
+
+## 專案的架構，Web 的架構邏輯
+
+ - 使用HOOK 、function component 
+ - UI 使用 [MATERIAL-UI](https://material-ui.com/)
+ 
+	 **專案架構**
+	├── src/   
+	│  ├── components/              # components 放置相關元件
+	│  │  └── Common/              # 放置共用元件
+	│  │  └── HeroList/               # HeroProfile 元件
+	│  │  └── HeroProfile/          # HeroProfile 元件
+	│  ├── hooks/                        # hooks 相關  
+	│  │  └── GlobalHook/         # 全域 HOOK
+	│  │  └── HeroHook/           # Hero HOOK
+	│  ├── service/                     # API 相關  
+	│  ├── APP.css                     # 根元件 CSS  
+	│  ├── APP.js                       # 根元件 相關
+	│  ├── APP.test.js               # 根元件 test
+	│  ├── index.css                 # 程式入口  CSS
+	│  ├── index.js                    # 程式入口
+	│  ├── serviceWorker.js  
+	├── package-lock.json  
+	├── package.json  
+	└── README. md
+
+## 你對於所有使用到的第三方 library 的理解，以及他們的功能簡介
+
+**Material UI**: react UI 框架，可以快速建立漂亮的元件，也有提供常用icon 庫。可以使用GRID 達成 RWD。重點是! 裡面的組件直觀很好串資料進去。:P
+**Create React App**: 可快速建立架構一個開發React用的基礎react檔案目錄結構不可或缺的好幫手。
+
+## 你在程式碼中寫註解的原則，遇到什麼狀況會寫註解
+
+ - 每份component import 的是什麼來源 如:
+ `// Material UI`
+  `import  Paper  from  '@material-ui/core/Paper';`
+  
+ - 暫時保留的程式碼(未來會用到的)
+ - function 功能為何
+ - 解釋說明比較複雜的功能
+ - 劃分共同元件在同一檔案功能為何 
+ - ...
+
+## 在這份專案中你遇到的困難、問題，以及解決的方法
+
+**遭遇到的困難:** 初次使用React新功能 HOOK實作, useEffect, useReducer與useContext做初始資料引入以及狀態管理使用的資料傳遞界接上的困難。
+
+**解決的方法:** 上網(官網, Stack Overflow, medium ... ... )依關鍵字搜尋，尋找相關的討論文，加上反覆思考，不斷嘗試再嘗試得解。
